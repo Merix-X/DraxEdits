@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DraxEdits - Objednávka</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <!-- Logo -->
+    <div class="logo">
+      <a href="index.html"><img src="logo.png" alt="DraxEdits logo"></a>
+    </div>
+    <ul>
+      <li><a href="about.html">O nás</a></li>
+      <li><a href="tech.html">Moje technika</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <h1>Objednávka</h1>
+  </div>
+
+  <div class="content">
+    <form class="order-form" action="mailto:kontakt@draxedits.cz" method="post" enctype="text/plain">
+      <label for="name">Jméno:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="service">Typ služby:</label>
+      <select id="service" name="service" required>
+        <option value="zakladni-strih">Základní střih do 3 minut</option>
+      </select>
+
+      <label for="notes">Poznámka / instrukce:</label>
+      <textarea id="notes" name="notes" rows="4" placeholder="DOPLNIT"></textarea>
+
+      <button type="submit" class="btn">Odeslat objednávku</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>Kontakt: <a href="mailto:DOPLNIT_EMAIL">DOPLNIT_EMAIL</a></p>
+    <p>&copy; 2025 DraxEdits</p>
+  </footer>
+
+</body>
+</html>
